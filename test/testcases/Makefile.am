@@ -1,7 +1,7 @@
 AUTOMAKE_OPTIONS = dejagnu
 
-AM_CFLAGS = -I$(top_srcdir)/src @WARN_CFLAGS@
-LDADD   = $(top_builddir)/src/libredwg.la -lm
+AM_CFLAGS = -I$(top_srcdir)/include -I$(top_srcdir)/src @WARN_CFLAGS@
+LDADD   = $(top_builddir)/src/libredwg.la
 #SOURCES = $(top_builddir)/src/libredwg.la
 
 paired = \
