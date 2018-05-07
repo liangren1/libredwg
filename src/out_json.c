@@ -11,7 +11,7 @@
 /*****************************************************************************/
 
 /*
- * fmt_json.c: write as JSON
+ * out_json.c: write as JSON
  * written by Reini Urban
  */
 
@@ -24,7 +24,7 @@
 #include "common.h"
 #include "bits.h"
 #include "dwg.h"
-#include "fmt_json.h"
+#include "out_json.h"
 
 #define DWG_LOGLEVEL DWG_LOGLEVEL_TRACE
 #include "logging.h"

@@ -11,18 +11,19 @@
 /*****************************************************************************/
 
 /*
- * fmt_dxfb.h: write dwg as Binary DXF
+ * out_dxf.h: write dwg as Ascii DXF
  * written by Reini Urban
  */
 
-#ifndef FMT_DXFB_H
-#define FMT_DXFB_H
+#ifndef OUT_DXF_H
+#define OUT_DXF_H
 
 #include "dwg.h"
 #include "bits.h"
 
-int dwg_write_dxfb(Bit_Chain *dat, Dwg_Data* dwg);
-void dwg_dxfb_object(Bit_Chain *dat, Dwg_Object *obj);
-void dxfb_header_write(Bit_Chain *dat, Dwg_Data* dwg);
+const char *dxf_format (int code);
+int dwg_write_dxf(Bit_Chain *dat, Dwg_Data* dwg);
+void dwg_dxf_object(Bit_Chain *dat, Dwg_Object *obj);
+void dxf_header_write(Bit_Chain *dat, Dwg_Data* dwg);
 
 #endif
